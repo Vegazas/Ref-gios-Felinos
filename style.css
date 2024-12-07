@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6ed1ff;
+  margin: 0;
+  padding: 0;
+}
+body.home{
+  background-image: url(assets/img/Portrait-of-a-cat-with-whiskers-visible.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+}
+body.inicio{
+  background-image: url(assets/img/Kittens.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1.homepage{
+  font-size: 2.5rem;
+  color: white;
+}
+
+.cat-breeds {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.breed-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 250px;
+  padding: 15px;
+  text-align: center;
+}
+
+.breed-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.breed-card h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #333;
+}
+img {
+  height: 25ch;
+  width: 70ch;
+  display: block;
+  margin: auto;
+}
+ul{
+  text-align: left;
+}
+img[alt="catnose"]{
+  height: 25ch;
+  width: 50ch;
+  display: block;
+  margin: auto;
+}
+img[alt="cat"]{
+  height: 30ch;
+  width: 55ch;
+  display: block;
+  margin: auto;
+}
+p{
+  text-align: center;
+  font-size: 15pt;
+  
+}
+div#menu{
+  width: 100%;
+  border: solid black;
+  padding: 9px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+}
+div.inicio{
+  position: relative;
+  top: 40px;
+  padding: 10px;
+}
+div#menu a{
+  margin: 0%;
+  border: solid black;
+  padding: 5px;
+  background-color: #6ed1ff;
+  text-decoration: none;
+  color: black;
+}
+#menu{
+
+}
+b{
+  color: black;
+}
+div.contactos{
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+label{
+  display: block;
+}
+textarea{
+  width: 60%;
+}
+button#contacto{
+  position: relative;
+  bottom: 25px;
+  left: 50px;
+  width: 70px;
+  height: 40px;
+}
+
+@media(max-width: 480px){
+  div#menu{
+    width: 20%;
+    height: 300px;
+    margin: 0px;
+    border: solid black;
+    padding: 9px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    float: left;
+  }
+  div#menu a{
+    margin: 0px;
+    text-align: center;
+    display: block;
+  }
+}
